@@ -1,15 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows.Forms;
+using System.Drawing;
+using System;
 
-namespace TijdFunction1
+namespace TimeFunction1
 {
-    class Program
+    class TimeMethod : Form
     {
-        static void Main(string[] args)
+        //varabiales declarations
+
+        public TimeMethod()
         {
+            //declarations of panel
+        }
+        //void methods
+    }
+    class Timefunction1
+    {
+        static void Main()
+        {
+            TimeMethod screen;
+            screen = new TimeMethod();
+            Application.Run(screen);
         }
     }
 }
