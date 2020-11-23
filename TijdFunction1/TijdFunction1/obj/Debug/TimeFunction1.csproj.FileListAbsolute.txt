@@ -1,0 +1,12 @@
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\obj\Debug\TimeFunction1.csprojAssemblyReference.cache
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\obj\Debug\TimeFunction1.csproj.CoreCompileInputs.cache
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\bin\Debug\TijdFunction1.exe.config
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\bin\Debug\TijdFunction1.exe
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\bin\Debug\TijdFunction1.pdb
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\bin\Debug\Microsoft.Data.ConnectionUI.dll
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\bin\Debug\Microsoft.SqlServer.Data.Tools.ExceptionMessageBox.dll
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\bin\Debug\Microsoft.Data.ConnectionUI.xml
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\obj\Debug\TimeFunction1.csproj.CopyComplete
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\obj\Debug\TijdFunction1.exe
+C:\Users\Toan Nguyen\source\repos\IntroductieProject\TijdFunction1\TijdFunction1\obj\Debug\TijdFunction1.pdb

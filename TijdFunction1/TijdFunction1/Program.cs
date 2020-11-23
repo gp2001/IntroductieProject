@@ -13,7 +13,12 @@ namespace TimeFunction1
 
         public TimeMethod()
         {
-            //declarations of panel//
+            //varabiales
+            int restTime = 500; //unit in minutes
+            int walkdistance; //all distances between attractions
+            int attractions = 10; //total number of attractions
+           
+            ////declarations of panel////
 
             //Route-knop//
             route = new Button();
@@ -24,27 +29,44 @@ namespace TimeFunction1
             route.Click += new EventHandler(route1_Click);
         }
 
+        ////void methods////
         public void route1_Click(object sender, EventArgs ea)
         {
             string connectionString;
             SqlConnection connect;
 
-            connectionString = @"Data Source=DESKTOP-Q28TMM2;Initial Catalog=%databasename%;User ID=ta;Password=dat123";
+            connectionString = @"Data Source=DESKTOP-Q28TMM2;Initial Catalog=Tim123;User ID=sam;Password=dat123";
 
             connect = new SqlConnection(connectionString);
             connect.Open();
-            
+
+            SqlCommand command;
+            SqlDataReader reader;
+            String sql,output = "";
+
+            sql = "Select AttractionName,WaitTime from AverageQueueTime";
+
+            command = new SqlCommand(sql, connect);
+
+            reader = command.ExecuteReader();
+            while(reader.Read())
+            {
+                output = output + reader.GetValue(0) + "-" + reader.GetValue(1) + "\n";
+            }
+            MessageBox.Show(output);
+
+            reader.Close();
+            command.Dispose();
             connect.Close();
         }
 
-        //void methods
-
-        //Void method for time
-
+        public void Time(int waitTime, int walkdistance)
+        {
+            double walkTime = walkdistance/1.4;
+            double estimatedTime = waitTime + walkTime;
+        }
+ 
         //draw event for time
-
-
-
 
     }
     class Timefunction1
