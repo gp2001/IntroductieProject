@@ -2,7 +2,9 @@
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Collections.Generic;
 using System;
+using System.Linq;
 
 namespace TimeFunction1
 {
@@ -10,17 +12,17 @@ namespace TimeFunction1
     {
         //varabiales declarations//
         Button route;
+        public int WaitTime { get; set; }
+        int restTime = 500; //unit in minutes
+        int walkdistance; // distance between 2 attractions
+        int attractions = 10; //total number of attractions
+        //public List<Elem> elements = new List<Elem> { };
 
         public TimeMethod()
-        {
-            //varabiales
-            int restTime = 500; //unit in minutes
-            int walkdistance; //all distances between attractions
-            int attractions = 10; //total number of attractions
-           
+        {  
             ////declarations of panel////
 
-            //Route-knop//
+            //Route-button//
             route = new Button();
             route.Text = "route";
             route.Size = new Size(50, 20);
@@ -37,32 +39,42 @@ namespace TimeFunction1
 
             connectionString = @"Data Source=DESKTOP-Q28TMM2;Initial Catalog=Tim123;User ID=sam;Password=dat123";
 
+
+
             connect = new SqlConnection(connectionString);
+
+            String  sql, output = "";
+            sql = "SELECT AttractionName, WaitTime FROM AverageQueueTime ";
+            SqlCommand command = new SqlCommand(sql, connect);
+
             connect.Open();
-
-            SqlCommand command;
             SqlDataReader reader;
-            String sql,output = "";
-
-            sql = "Select AttractionName,WaitTime from AverageQueueTime";
-
-            command = new SqlCommand(sql, connect);
-
             reader = command.ExecuteReader();
-            while(reader.Read())
+            while (reader.Read())
             {
-                output = output + reader.GetValue(0) + "-" + reader.GetValue(1) + "\n";
+                output = output + reader.GetValue(0) + "," + reader.GetValue(1)+ ",";
+                //attractionName = attractionName + reader.GetValue(0) + ",";
+                //waitTime = waitTime + reader.GetValue(1) + ",";
+
             }
-            MessageBox.Show(output);
+
+            List<string> elem = output.Split(',').ToList();
+            //List<string> queuetime = waitTime.Split(',').ToList();
+            //List<string> names = attractionName.Split(',').ToList();
+
+            /*sql.ToList();*/ // converts datatable to list
+            elem.ForEach(Console.WriteLine);    //shows the list in console
+
 
             reader.Close();
             command.Dispose();
             connect.Close();
+
         }
 
         public void Time(int waitTime, int walkdistance)
-        {
-            double walkTime = walkdistance/1.4;
+        {            
+            double walkTime = walkdistance/1.4; //walkdistance also acquired from database
             double estimatedTime = waitTime + walkTime;
         }
  
