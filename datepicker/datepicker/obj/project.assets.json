@@ -8,25 +8,20 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Toan Nguyen\\.nuget\\packages\\": {},
-    "G:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Martijn\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Toan Nguyen\\Documents\\GitHub\\IntroductieProject\\datepicker\\datepicker\\datepicker.csproj",
+      "projectUniqueName": "C:\\Users\\Martijn\\Documents\\GitHub\\IntroductieProject\\datepicker\\datepicker\\datepicker.csproj",
       "projectName": "datepicker",
-      "projectPath": "C:\\Users\\Toan Nguyen\\Documents\\GitHub\\IntroductieProject\\datepicker\\datepicker\\datepicker.csproj",
-      "packagesPath": "C:\\Users\\Toan Nguyen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Toan Nguyen\\Documents\\GitHub\\IntroductieProject\\datepicker\\datepicker\\obj\\",
+      "projectPath": "C:\\Users\\Martijn\\Documents\\GitHub\\IntroductieProject\\datepicker\\datepicker\\datepicker.csproj",
+      "packagesPath": "C:\\Users\\Martijn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Martijn\\Documents\\GitHub\\IntroductieProject\\datepicker\\datepicker\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "G:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Toan Nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Martijn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -63,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
